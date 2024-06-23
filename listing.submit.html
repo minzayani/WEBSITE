@@ -1,0 +1,77 @@
+<html>
+<head>
+    <title>Listing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #db9bcb;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            color: #000000;
+        }
+        ul, ol {
+            width: 60%;
+            margin: 20px auto;
+            padding: 0;
+        }
+        ul li, ol li {
+            background: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            list-style: none;
+            border-left: 5px solid #4d0b44;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s ease;
+        }
+        ul li:hover, ol li:hover {
+            background: #f0f0f5;
+        }
+        ul li::before {
+            content: "•";
+            color: #373737;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        ol {
+            counter-reset: list-counter;
+        }
+        ol li {
+            counter-increment: list-counter;
+        }
+        ol li::before {
+            content: counter(list-counter) ". ";
+            color: #000000;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Unordered List</h2>
+<center><i><big>FAVORITE FOOD</big></i></center>
+<ul>
+    <li>fruits except durian</li>
+    <li>tomyam</li>
+    <li>chicken wings</li>
+    <li>ice cream</li>
+    <li>marshmellow</li>
+</ul>
+
+<h2>Ordered List</h2>
+<center><i><big>MY SIBLINGS</big></i></center>
+<ol>
+    <li>NORMINHALINA</li>
+    <li>NORMINZAYANI</li>
+    <li>HAFIY NAZREEM</li>
+    <li>NORMINQAZRINA</li>
+    <li>NORMINRAISHA IMANI</li>
+</ol>
+
+</body>
+</html>
